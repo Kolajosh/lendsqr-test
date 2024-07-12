@@ -5,6 +5,7 @@ const useRequest = () => {
   const [error, setError] = useState<any>(null);
   const [loading, toggleLoading] = useState<boolean>(false);
 
+  // custom hoot to fetch user details from the api
   const fetchUsers = async () => {
     toggleLoading(true);
     try {

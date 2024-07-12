@@ -63,11 +63,13 @@ const Table: React.FC = () => {
     }
   }, [data]);
 
+  // to reset filters
   const handleResetFilter = () => {
     setFilteredDataList(data);
     setTotalRecord(data.length);
   };
 
+  // to apply filter on click
   const handleFilter = (filters: any) => {
     if (!data) return;
 
@@ -129,7 +131,9 @@ const Table: React.FC = () => {
             </>
           ) : (
             <div className="NoDataFound">
-              <p>Oops! No data found, Reset yout filters</p>
+              <p>
+                Oops! No data found, Check your connection or Reset yout filters
+              </p>
               <br />
               <button onClick={handleResetFilter}>Reset Filter</button>
             </div>

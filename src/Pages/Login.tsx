@@ -6,6 +6,7 @@ import { loginValidationSchema } from "../utils/Validations/login.validation";
 function Login() {
   const [showPass, setShowPass] = useState(false);
 
+  // for form state management and validations
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -14,6 +15,7 @@ function Login() {
 
     onSubmit: async (values) => {
       console.log(values);
+      window.location.assign("/users");
     },
 
     validationSchema: loginValidationSchema,
@@ -22,14 +24,10 @@ function Login() {
   const { handleBlur, handleChange, handleSubmit, errors, isValid, dirty } =
     formik;
 
+  // function to reveal password
   const RevealPassword = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setShowPass(!showPass);
-  };
-
-  const handleLogin = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    window.location.assign("/users");
   };
 
   return (
@@ -54,7 +52,7 @@ function Login() {
           <div>
             <h1>Welcome!</h1>
             <p>Enter details to login.</p>
-            <form onSubmit={handleLogin}>
+            <form onSubmit={handleSubmit}>
               <div className="form-field">
                 <input
                   name="email"
