@@ -1,8 +1,26 @@
 import React, { useState, FormEvent } from "react";
 import "./styles/Login.scss";
+import { useFormik } from "formik";
+import { loginValidationSchema } from "../utils/Validations/login.validation";
 
 function Login() {
   const [showPass, setShowPass] = useState(false);
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+
+    onSubmit: async (values) => {
+      console.log(values);
+    },
+
+    validationSchema: loginValidationSchema,
+  });
+
+  const { handleBlur, handleChange, handleSubmit, errors, isValid, dirty } =
+    formik;
 
   const RevealPassword = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
@@ -38,20 +56,37 @@ function Login() {
             <p>Enter details to login.</p>
             <form onSubmit={handleLogin}>
               <div className="form-field">
-                <input type="email" placeholder="Email" required />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
+                <span>{errors?.email}</span>
               </div>
               <div className="form-field">
                 <input
+                  name="password"
                   type={showPass ? "text" : "password"}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
                   placeholder="Password"
-                  required
                 />
+                <span>{errors?.password}</span>
                 <button className="show_btn" onClick={RevealPassword}>
                   Show
                 </button>
               </div>
+
               <a href="/">FORGOT PASSWORD?</a>
-              <button type="submit" className="login_btn">LOG IN</button>
+              <button
+                disabled={!(isValid && dirty)}
+                type="submit"
+                className="login_btn"
+              >
+                LOG IN
+              </button>
             </form>
           </div>
         </div>

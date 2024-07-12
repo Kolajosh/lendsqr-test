@@ -88,6 +88,11 @@
     form {
       margin: 60px 0px;
       width: 100%;
+
+      span {
+        font-size: 12px;
+        color: red;
+      }
     }
 
     .form-field {
@@ -96,6 +101,12 @@
       position: relative;
       border: solid 2px #545f7d26;
       border-radius: 5px;
+
+      span {
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+      }
 
       input {
         width: 100%;
@@ -148,6 +159,12 @@
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
+    }
+
+    .login_btn:disabled {
+      background: #cccccc;
+      cursor: not-allowed;
+      color: #666666;
     }
   }
 }
