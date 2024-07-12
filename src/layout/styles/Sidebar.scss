@@ -1,0 +1,106 @@
+.sidebarContainer {
+  width: 283px;
+  height: 100%;
+  overflow-y: auto;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px #0000000a;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  padding-bottom: 120px;
+  position: fixed;
+  z-index: 900;
+  transition: width 1s ease;
+
+  &.open {
+    width: 283px;
+  }
+
+  @media (max-width: 768px) {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 8px;
+    background: #39cdcc10;
+  }
+  &::-webkit-scroll-thumb {
+    border-radius: 8px;
+    background: #213f7d;
+    border: 1px solid black;
+  }
+
+  button {
+    padding: 30px;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      color: #213f7d;
+    }
+
+    span {
+      color: #213f7d;
+      font-size: 16px;
+      margin: 0px 10px;
+    }
+
+    &:hover {
+      background: #39cdcc10;
+    }
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      padding: 10px 30px;
+      color: #545f7d;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  .linebreaker {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #213f7d;
+    opacity: 10%;
+  }
+
+  a {
+    padding: 20px 30px;
+    color: #213f7d70;
+    font-size: 16px;
+    text-decoration: none;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    span {
+      margin: 0px 10px;
+    }
+
+    &.active,
+    &:hover {
+      color: #213f7d;
+      background: #39cdcc09;
+    }
+
+    &.active {
+      color: #213f7d;
+      border-left: 3px solid #39cdcc;
+    }
+  }
+}

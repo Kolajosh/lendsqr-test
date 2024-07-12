@@ -1,0 +1,86 @@
+.UserInfoContainer {
+  padding: 0px 30px;
+  margin: 30px 0px;
+  background: #ffffff;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid rgba(33, 63, 125, 0.0588235294);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+.UserInfoContainer .field {
+  color: #213f7d;
+  margin: 30px 25px;
+}
+.UserInfoContainer .field h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.UserInfoContainer .field .row {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px -25px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(33, 63, 125, 0.1019607843);
+}
+.UserInfoContainer .field .row:nth-of-type(2) {
+  border-top: 1px solid rgba(33, 63, 125, 0.1019607843);
+}
+@media (max-width: 375px) {
+  .UserInfoContainer .field .row {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+.UserInfoContainer .field .row .col {
+  margin: 0px 25px;
+  margin-top: 30px;
+}
+.UserInfoContainer .field .row .col h3 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #545f7d;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.UserInfoContainer .field .row .col p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #545f7d;
+}
+.UserInfoContainer .field .row-2 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px -25px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(33, 63, 125, 0.1019607843);
+}
+.UserInfoContainer .field .row-2:nth-of-type(2) {
+  border-top: 1px solid rgba(33, 63, 125, 0.1019607843);
+}
+@media (max-width: 375px) {
+  .UserInfoContainer .field .row-2 {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+.UserInfoContainer .field .row-2 .col {
+  margin: 0px 25px;
+  margin-top: 30px;
+}
+.UserInfoContainer .field .row-2 .col h3 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #545f7d;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.UserInfoContainer .field .row-2 .col p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #545f7d;
+}
+.UserInfoContainer .field:last-of-type .row {
+  border-bottom: none;
+}/*# sourceMappingURL=UserInformation.css.map */

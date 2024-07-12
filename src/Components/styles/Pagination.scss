@@ -1,0 +1,62 @@
+.PaginationSection{
+    margin: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media(max-width: 1000px) {
+        flex-direction: column;
+    }
+    
+    .details {
+        display: flex;
+        align-items: center;
+    
+        @media(max-width: 1000px) {
+            margin-bottom: 20px;
+        }
+
+        select {
+            margin: 0px 10px;
+            background: #213F7D1A;
+            color: #213F7D;
+            border-radius: 4px;
+            padding: 5px 10px;
+            outline: none;
+            border: none;
+        }
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+
+    span{
+        color: #545F7D75;
+    }
+
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        color: #545F7D75;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0px 10px;
+        
+        &.active {
+            color: #545F7D;
+        }
+        
+        &:nth-of-type(1),
+        &:last-of-type {
+            // width: 24px;
+            height: 24px;
+            background: #545F7D15;
+            color: #545F7D;
+            border-radius: 4px;
+        }
+    }
+}

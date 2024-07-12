@@ -1,0 +1,76 @@
+.Cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.Cards .card {
+  background: #FFFFFF;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid rgba(33, 63, 125, 0.0588235294);
+  border-radius: 4px;
+  padding: 20px 30px;
+  height: 160px;
+  width: 240px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 370px) {
+  .Cards .card {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 300px) {
+  .Cards .card {
+    padding: 20px 30px;
+    max-width: unset;
+    min-width: 100%;
+  }
+}
+@media (max-width: 577px) {
+  .Cards .card {
+    height: 150px;
+    width: 150px;
+  }
+}
+.Cards .card span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.Cards .card span svg {
+  width: 60px;
+  height: 60px;
+}
+@media (max-width: 577px) {
+  .Cards .card span svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.Cards .card p {
+  color: #545F7D;
+  font-size: 14px;
+}
+@media (max-width: 577px) {
+  .Cards .card p {
+    font-size: 12px;
+  }
+}
+.Cards .card h2 {
+  color: #213F7D;
+  font-weight: 600;
+  font-size: 24px;
+}
+@media (max-width: 577px) {
+  .Cards .card h2 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=UsersCard.css.map */

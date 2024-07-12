@@ -1,0 +1,131 @@
+.UserHeader {
+  padding: 30px;
+  padding-bottom: 0px;
+  background: #FFFFFF;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid rgba(33, 63, 125, 0.0588235294);
+  border-radius: 4px;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .UserHeader {
+    padding-bottom: 30px;
+  }
+}
+.UserHeader .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 1100px) {
+  .UserHeader .profile {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+}
+.UserHeader .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.UserHeader .profile .column {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .UserHeader .profile .column {
+    flex-direction: column;
+  }
+}
+.UserHeader .profile .col {
+  padding: 0px 30px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 1100px) {
+  .UserHeader .profile .col {
+    align-items: center;
+  }
+}
+.UserHeader .profile .col.center {
+  border-left: 1px solid rgba(84, 95, 125, 0.4588235294);
+  border-right: 1px solid rgba(84, 95, 125, 0.4588235294);
+}
+@media (max-width: 1100px) {
+  .UserHeader .profile .col.center {
+    border: none;
+  }
+}
+.UserHeader .profile .col h1 {
+  color: #213F7D;
+  font-size: 22px;
+  font-weight: 500;
+}
+.UserHeader .profile .col p {
+  color: #213F7D;
+  font-size: 12px;
+}
+.UserHeader .profile .col p svg {
+  color: #FFFFFF;
+  stroke: #E9B200;
+  width: 15px;
+  height: 15px;
+}
+.UserHeader .profile .col p .active svg {
+  color: #E9B200;
+}
+.UserHeader .nav_prev {
+  display: none;
+  width: 100%;
+  background: #39CDCC;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 40px;
+}
+@media (max-width: 1100px) {
+  .UserHeader .nav_prev {
+    display: unset;
+  }
+}
+.UserHeader .nav {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1100px) {
+  .UserHeader .nav {
+    position: absolute;
+    flex-direction: column;
+    right: 30px;
+    margin-top: 5px;
+    background: #FFFFFF;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.0392156863);
+    border: 1px solid rgba(33, 63, 125, 0.0588235294);
+    border-radius: 4px;
+  }
+}
+.UserHeader .nav button {
+  color: rgba(0, 0, 0, 0.8);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 0px;
+  font-size: 16px;
+  opacity: 80%;
+}
+@media (max-width: 1100px) {
+  .UserHeader .nav button {
+    width: 200px;
+  }
+}
+.UserHeader .nav button.active {
+  color: #39CDCC;
+  border-bottom: 2px solid #39CDCC;
+}/*# sourceMappingURL=UserProfile.css.map */

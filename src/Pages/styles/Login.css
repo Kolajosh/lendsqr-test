@@ -1,0 +1,146 @@
+.brand {
+  padding: 50px;
+  display: none;
+}
+.brand img {
+  width: 173.76px;
+  height: 36px;
+}
+@media (max-width: 768px) {
+  .brand {
+    display: block;
+  }
+}
+
+.loginPage {
+  display: flex;
+  margin-left: -283px;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .loginPage {
+    margin-left: 0px;
+    flex-direction: column-reverse;
+  }
+}
+.loginPage .illustration {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 97px 107px;
+}
+@media (max-width: 768px) {
+  .loginPage .illustration {
+    padding: 50px;
+    width: 100%;
+  }
+  .loginPage .illustration .logo {
+    display: none;
+  }
+}
+.loginPage .illustration .logo {
+  width: 173.76px;
+  height: 36px;
+}
+.loginPage .illustration .board {
+  flex: 1;
+  margin-top: 139px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 600px;
+  max-height: 337.57px;
+}
+@media (max-width: 768px) {
+  .loginPage .illustration .board {
+    margin-top: 0px;
+  }
+}
+.loginPage .form {
+  width: 50%;
+  padding: 150px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px -3px 20px rgba(0, 0, 0, 0.0392156863);
+}
+@media (max-width: 880px) {
+  .loginPage .form {
+    padding: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .loginPage .form {
+    width: 100%;
+  }
+}
+.loginPage .form h1 {
+  font-family: "Avenir", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #213f7d;
+}
+.loginPage .form p {
+  font-family: "Avenir", sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+  color: #545f7d;
+}
+.loginPage .form form {
+  margin: 60px 0px;
+  width: 100%;
+}
+.loginPage .form .form-field {
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+  border: solid 2px rgba(84, 95, 125, 0.1490196078);
+  border-radius: 5px;
+}
+.loginPage .form .form-field input {
+  width: 100%;
+  max-width: 447px;
+  height: 50px;
+  padding: 0px 15px;
+  color: #000000;
+  border: none;
+  outline: none;
+  background: none;
+}
+.loginPage .form .form-field input ::placeholder,
+.loginPage .form .form-field input ::-webkit-input-placeholder {
+  color: #545f7d;
+}
+.loginPage .form .form-field input :-ms-input-placeholder {
+  color: #545f7d;
+}
+.loginPage .form .form-field .show_btn {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #39cdcc;
+  cursor: pointer;
+}
+.loginPage .form a {
+  display: block;
+  color: #39cdcc;
+  text-decoration: none;
+  font-weight: 600px;
+  font-size: 12px;
+}
+.loginPage .form .login_btn {
+  background: #39cdcc;
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  height: 48px;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}/*# sourceMappingURL=Login.css.map */

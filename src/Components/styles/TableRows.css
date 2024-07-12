@@ -1,0 +1,53 @@
+.TR {
+  border-bottom: 1px solid rgba(33, 63, 125, 0.1019607843);
+  height: 60px;
+  position: relative;
+}
+.TR td {
+  white-space: nowrap;
+  padding-right: 35px;
+  font-size: 14px;
+}
+.TR td span {
+  border-radius: 100px;
+  padding: 5px 10px;
+}
+.TR td button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.TR td button svg {
+  width: 20px;
+  height: 20px;
+  color: #545F7D;
+}
+.TR:last-of-type {
+  border-bottom: none;
+}
+
+.PopOver {
+  position: absolute;
+  right: 10px;
+  background: #FFFFFF;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid rgba(33, 63, 125, 0.0588235294);
+  border-radius: 4px;
+  padding: 20px 30px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+.PopOver a {
+  color: #545F7D;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.PopOver a svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}/*# sourceMappingURL=TableRows.css.map */

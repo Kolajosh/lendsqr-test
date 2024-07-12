@@ -1,0 +1,86 @@
+.UserDetailsContainer {
+  padding: 70px 60px;
+}
+@media (max-width: 1100px) {
+  .UserDetailsContainer {
+    padding: 30px;
+  }
+}
+.UserDetailsContainer .nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #545F7D;
+}
+.UserDetailsContainer .nav a svg {
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+}
+.UserDetailsContainer .header {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 950px) {
+  .UserDetailsContainer .header {
+    flex-direction: column;
+  }
+}
+.UserDetailsContainer .header h1 {
+  color: #213F7D;
+  font-size: 24px;
+  font-weight: 500;
+}
+.UserDetailsContainer .header .btns {
+  display: flex;
+  margin: 10px 0px;
+}
+@media (max-width: 445px) {
+  .UserDetailsContainer .header .btns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.UserDetailsContainer .header .btns button {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 170px;
+  height: 40px;
+  border: 1px solid #E4033B;
+  outline: none;
+  cursor: pointer;
+  color: #E4033B;
+  margin-left: 20px;
+}
+@media (max-width: 445px) {
+  .UserDetailsContainer .header .btns button {
+    margin-left: unset;
+    margin-bottom: 10px;
+  }
+}
+.UserDetailsContainer .header .btns button:nth-of-type(2) {
+  border: 1px solid #39CDCC;
+  color: #39CDCC;
+}
+
+.Loader {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Loader svg {
+  width: 80px;
+  height: 80px;
+  color: #545F7D;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=UserDetails.css.map */

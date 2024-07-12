@@ -1,0 +1,14 @@
+.UsersContainer {
+  padding: 60px;
+  flex: 1;
+}
+@media (max-width: 1000px) {
+  .UsersContainer {
+    padding: 30px;
+  }
+}
+.UsersContainer .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #213F7D;
+}/*# sourceMappingURL=Users.css.map */

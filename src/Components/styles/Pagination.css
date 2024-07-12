@@ -1,0 +1,57 @@
+.PaginationSection {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .PaginationSection {
+    flex-direction: column;
+  }
+}
+.PaginationSection .details {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .PaginationSection .details {
+    margin-bottom: 20px;
+  }
+}
+.PaginationSection .details select {
+  margin: 0px 10px;
+  background: rgba(33, 63, 125, 0.1019607843);
+  color: #213F7D;
+  border-radius: 4px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav span {
+  color: rgba(84, 95, 125, 0.4588235294);
+}
+.nav button {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgba(84, 95, 125, 0.4588235294);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+.nav button.active {
+  color: #545F7D;
+}
+.nav button:nth-of-type(1), .nav button:last-of-type {
+  height: 24px;
+  background: rgba(84, 95, 125, 0.0823529412);
+  color: #545F7D;
+  border-radius: 4px;
+}/*# sourceMappingURL=Pagination.css.map */

@@ -1,0 +1,9 @@
+.pageContainer{
+    margin: 0px;
+    margin-left: 283px;
+    padding: 0px;
+
+    @media (max-width: 768px) {
+        margin-left: 0px;
+    }
+}

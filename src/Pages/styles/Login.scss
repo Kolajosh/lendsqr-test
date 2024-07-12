@@ -1,0 +1,153 @@
+.brand {
+  padding: 50px;
+  display: none;
+
+  img {
+    width: 173.76px;
+    height: 36px;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.loginPage {
+  display: flex;
+  margin-left: -283px;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    flex-direction: column-reverse;
+  }
+
+  .illustration {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 97px 107px;
+
+    @media (max-width: 768px) {
+      padding: 50px;
+      width: 100%;
+      .logo {
+        display: none;
+      }
+    }
+
+    .logo {
+      width: 173.76px;
+      height: 36px;
+    }
+
+    .board {
+      flex: 1;
+      margin-top: 139px;
+      object-fit: contain;
+      max-width: 600px;
+      max-height: 337.57px;
+
+      @media (max-width: 768px) {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .form {
+    width: 50%;
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px -3px 20px #0000000a;
+
+    @media (max-width: 880px) {
+      padding: 50px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    h1 {
+      font-family: "Avenir", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      color: #213f7d;
+    }
+    p {
+      font-family: "Avenir", sans-serif;
+
+      font-size: 20px;
+      font-weight: 400px;
+      color: #545f7d;
+    }
+
+    form {
+      margin: 60px 0px;
+      width: 100%;
+    }
+
+    .form-field {
+      width: 100%;
+      margin-bottom: 24px;
+      position: relative;
+      border: solid 2px #545f7d26;
+      border-radius: 5px;
+
+      input {
+        width: 100%;
+        max-width: 447px;
+        height: 50px;
+        padding: 0px 15px;
+        color: #000000;
+        border: none;
+        outline: none;
+        background: none;
+
+        ::placeholder,
+        ::-webkit-input-placeholder {
+          color: #545f7d;
+        }
+        :-ms-input-placeholder {
+          color: #545f7d;
+        }
+      }
+
+      .show_btn {
+        position: absolute;
+        right: 10px;
+        top: 30%;
+        background: none;
+        border: none;
+        outline: none;
+        color: #39cdcc;
+        cursor: pointer;
+      }
+    }
+
+    a {
+      display: block;
+      color: #39cdcc;
+      text-decoration: none;
+      font-weight: 600px;
+      font-size: 12px;
+    }
+
+    .login_btn {
+      background: #39cdcc;
+      color: #ffffff;
+      width: 100%;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      height: 48px;
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
